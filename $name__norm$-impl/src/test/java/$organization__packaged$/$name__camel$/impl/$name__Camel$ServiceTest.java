@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import akka.NotUsed;
 import $organization$.$name;format="camel"$.api.GreetingMessage;
 import $organization$.$name;format="camel"$.api.$name;format="Camel"$Service;
 
