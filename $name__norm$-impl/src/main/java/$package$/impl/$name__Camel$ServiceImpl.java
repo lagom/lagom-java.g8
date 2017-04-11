@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2016 Lightbend Inc. <http://www.lightbend.com>
  */
-package $organization$.$name;format="camel"$.impl;
+package $package$.impl;
 
 import akka.Done;
 import akka.NotUsed;
@@ -13,9 +13,9 @@ import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 import javax.inject.Inject;
-import $organization$.$name;format="camel"$.api.GreetingMessage;
-import $organization$.$name;format="camel"$.api.$name;format="Camel"$Service;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Command.*;
+import $package$.api.GreetingMessage;
+import $package$.api.$name;format="Camel"$Service;
+import $package$.impl.$name;format="Camel"$Command.*;
 
 /**
  * Implementation of the $name;format="Camel"$Service.

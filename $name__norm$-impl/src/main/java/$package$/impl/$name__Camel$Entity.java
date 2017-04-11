@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2016 Lightbend Inc. <http://www.lightbend.com>
  */
-package $organization$.$name;format="camel"$.impl;
+package $package$.impl;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
@@ -9,9 +9,9 @@ import java.util.Optional;
 import com.lightbend.lagom.javadsl.persistence.PersistentEntity;
 
 import akka.Done;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Command.Hello;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Command.UseGreetingMessage;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Event.GreetingMessageChanged;
+import $package$.impl.$name;format="Camel"$Command.Hello;
+import $package$.impl.$name;format="Camel"$Command.UseGreetingMessage;
+import $package$.impl.$name;format="Camel"$Event.GreetingMessageChanged;
 
 /**
  * This is an event sourced entity. It has a state, {@link $name;format="Camel"$State}, which

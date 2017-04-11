@@ -1,13 +1,13 @@
 /*
  * Copyright (C) 2016 Lightbend Inc. <http://www.lightbend.com>
  */
-package $organization$.$name;format="camel"$stream.impl;
+package $package$stream.impl;
 
 import akka.NotUsed;
 import akka.stream.javadsl.Source;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
-import $organization$.$name;format="camel"$.api.$name;format="Camel"$Service;
-import $organization$.$name;format="camel"$stream.api.$name;format="Camel"$StreamService;
+import $package$.api.$name;format="Camel"$Service;
+import $package$stream.api.$name;format="Camel"$StreamService;
 
 import javax.inject.Inject;
 

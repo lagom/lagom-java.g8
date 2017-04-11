@@ -1,4 +1,4 @@
-package $organization$.$name;format="camel"$.impl;
+package $package$.impl;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,9 +15,9 @@ import com.lightbend.lagom.javadsl.testkit.PersistentEntityTestDriver.Outcome;
 import akka.Done;
 import akka.actor.ActorSystem;
 import akka.testkit.JavaTestKit;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Command.Hello;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Command.UseGreetingMessage;
-import $organization$.$name;format="camel"$.impl.$name;format="Camel"$Event.GreetingMessageChanged;
+import $package$.impl.$name;format="Camel"$Command.Hello;
+import $package$.impl.$name;format="Camel"$Command.UseGreetingMessage;
+import $package$.impl.$name;format="Camel"$Event.GreetingMessageChanged;
 
 public class $name;format="Camel"$EntityTest {
 
