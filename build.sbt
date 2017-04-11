@@ -11,7 +11,8 @@ lazy val `$name;format="norm"$-api` = (project in file("$name;format="norm"$-api
   .settings(common: _*)
   .settings(
     libraryDependencies ++= Seq(
-      lagomJavadslApi
+      lagomJavadslApi,
+      lombok
     )
   )
 
@@ -21,7 +22,8 @@ lazy val `$name;format="norm"$-impl` = (project in file("$name;format="norm"$-im
   .settings(
     libraryDependencies ++= Seq(
       lagomJavadslPersistenceCassandra,
-      lagomJavadslTestKit
+      lagomJavadslTestKit,
+      lombok
     )
   )
   .settings(lagomForkedTestSettings: _*)
@@ -44,6 +46,8 @@ lazy val `$name;format="norm"$-stream-impl` = (project in file("$name;format="no
     )
   )
   .dependsOn(`$name;format="norm"$-stream-api`, `$name;format="norm"$-api`)
+
+val lombok = "org.projectlombok" % "lombok" % "1.16.10"
 
 def common = Seq(
   javacOptions in compile += "-parameters"
