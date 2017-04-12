@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2016 Lightbend Inc. <http://www.lightbend.com>
  */
-package $organization$.$name;format="camel"$.impl;
+package $package$.impl;
 
 import static com.lightbend.lagom.javadsl.testkit.ServiceTest.defaultSetup;
 import static com.lightbend.lagom.javadsl.testkit.ServiceTest.withServer;
@@ -10,8 +10,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import $organization$.$name;format="camel"$.api.GreetingMessage;
-import $organization$.$name;format="camel"$.api.$name;format="Camel"$Service;
+import $package$.api.GreetingMessage;
+import $package$.api.$name;format="Camel"$Service;
 
 public class $name;format="Camel"$ServiceTest {
 

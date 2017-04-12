@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2016 Lightbend Inc. <http://www.lightbend.com>
  */
-package $organization$.$name;format="camel"$.impl;
+package $package$.impl;
 
 import javax.annotation.Nullable;
 import lombok.Value;

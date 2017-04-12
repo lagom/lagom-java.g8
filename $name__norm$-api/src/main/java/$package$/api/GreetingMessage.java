@@ -1,4 +1,4 @@
-package $organization$.$name;format="camel"$.api;
+package $package$.api;
 
 import javax.annotation.Nullable;
 import lombok.Value;
