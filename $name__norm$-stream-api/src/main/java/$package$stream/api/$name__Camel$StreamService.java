@@ -20,13 +20,27 @@ import com.lightbend.lagom.javadsl.api.ServiceCall;
  */
 public interface $name;format="Camel"$StreamService extends Service {
 
-  ServiceCall<Source<String, NotUsed>, Source<String, NotUsed>> stream();
+  /**
+   * This stream is implemented by asking the hello service directly to say
+   * hello to each passed in name. It requires the hello service to be up
+   * and running to function.
+   */
+  ServiceCall<Source<String, NotUsed>, Source<String, NotUsed>> directStream();
+
+  /**
+   * This stream is implemented autonomously, it uses its own store, populated
+   * by subscribing to the events published by the hello service, to say hello
+   * to each passed in name. It can function even when the hello service is
+   * down.
+   */
+  ServiceCall<Source<String, NotUsed>, Source<String, NotUsed>> autonomousStream();
 
   @Override
   default Descriptor descriptor() {
     return named("$name;format="norm"$-stream")
         .withCalls(
-            namedCall("stream", this::stream)
+            namedCall("direct-stream", this::directStream),
+            namedCall("auto-stream", this::autonomousStream)
         ).withAutoAcl(true);
   }
 }

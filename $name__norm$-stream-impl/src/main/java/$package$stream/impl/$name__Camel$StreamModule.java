@@ -18,5 +18,7 @@ public class $name;format="Camel"$StreamModule extends AbstractModule implements
     bindServices(serviceBinding($name;format="Camel"$StreamService.class, $name;format="Camel"$StreamServiceImpl.class));
     // Bind the $name;format="Camel"$Service client
     bindClient($name;format="Camel"$Service.class);
+    // Bind the subscriber eagerly to ensure it starts up
+    bind($name;format="Camel"$StreamSubscriber.class).asEagerSingleton();
   }
 }
