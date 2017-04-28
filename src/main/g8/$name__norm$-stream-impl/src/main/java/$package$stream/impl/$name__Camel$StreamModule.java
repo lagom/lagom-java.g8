@@ -15,7 +15,7 @@ public class $name;format="Camel"$StreamModule extends AbstractModule implements
   @Override
   protected void configure() {
     // Bind the $name;format="Camel"$StreamService service
-    bindServices(serviceBinding($name;format="Camel"$StreamService.class, $name;format="Camel"$StreamServiceImpl.class));
+    bindService($name;format="Camel"$StreamService.class, $name;format="Camel"$StreamServiceImpl.class);
     // Bind the $name;format="Camel"$Service client
     bindClient($name;format="Camel"$Service.class);
     // Bind the subscriber eagerly to ensure it starts up
