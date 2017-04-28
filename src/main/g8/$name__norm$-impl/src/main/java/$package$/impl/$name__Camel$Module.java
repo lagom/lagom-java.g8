@@ -13,6 +13,6 @@ import $package$.api.$name;format="Camel"$Service;
 public class $name;format="Camel"$Module extends AbstractModule implements ServiceGuiceSupport {
   @Override
   protected void configure() {
-    bindServices(serviceBinding($name;format="Camel"$Service.class, $name;format="Camel"$ServiceImpl.class));
+    bindService($name;format="Camel"$Service.class, $name;format="Camel"$ServiceImpl.class);
   }
 }
