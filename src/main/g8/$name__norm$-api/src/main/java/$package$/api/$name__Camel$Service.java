@@ -45,7 +45,7 @@ public interface $name;format="Camel"$Service extends Service {
     return named("$name;format="camel"$").withCalls(
         pathCall("/api/hello/:id",  this::hello),
         pathCall("/api/hello/:id", this::useGreeting)
-      ).publishing(
+      ).withTopics(
         topic("hello-events", this::helloEvents)
           // Kafka partitions messages, messages within the same partition will
           // be delivered in order, to ensure that all messages for the same user
