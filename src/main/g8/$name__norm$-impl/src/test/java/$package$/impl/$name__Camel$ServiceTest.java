@@ -17,7 +17,7 @@ public class $name;format="Camel"$ServiceTest {
 
   @Test
   public void shouldStorePersonalizedGreeting() throws Exception {
-    withServer(defaultSetup().withCassandra(true), server -> {
+    withServer(defaultSetup().withCassandra(), server -> {
       $name;format="Camel"$Service service = server.client($name;format="Camel"$Service.class);
 
       String msg1 = service.hello("Alice").invoke().toCompletableFuture().get(5, SECONDS);
