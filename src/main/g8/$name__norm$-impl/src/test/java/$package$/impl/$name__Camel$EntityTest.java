@@ -11,8 +11,9 @@ import org.junit.Test;
 
 import java.util.Collections;
 
-import com.lightbend.lagom.javadsl.testkit.PersistentEntityTestDriver;
-import com.lightbend.lagom.javadsl.testkit.PersistentEntityTestDriver.Outcome;
+import $package$.impl.$name;format="Camel"$Command.Hello;
+import $package$.impl.$name;format="Camel"$Command.UseGreetingMessage;
+import $package$.impl.$name;format="Camel"$Event.GreetingMessageChanged;
 
 import static org.junit.Assert.assertEquals;
 
