@@ -48,7 +48,7 @@ public interface $name;format="Camel"$Service extends Service {
                                 // go to the same partition (and hence are delivered in order with respect
                                 // to that user), we configure a partition key strategy that extracts the
                                 // name as the partition key.
-                                .withProperty(KafkaProperties.partitionKeyStrategy(), HelloEvent::getName)
+                                .withProperty(KafkaProperties.partitionKeyStrategy(), $name;format="Camel"$Event::getName)
                 )
                 .withAutoAcl(true);
     }
