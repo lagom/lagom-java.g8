@@ -23,6 +23,7 @@ lazy val `$name;format="norm"$-impl` = (project in file("$name;format="norm"$-im
     libraryDependencies ++= Seq(
       lagomJavadslPersistenceCassandra,
       lagomJavadslKafkaBroker,
+      lagomLogback,
       lagomJavadslTestKit,
       lombok
     )
@@ -45,6 +46,7 @@ lazy val `$name;format="norm"$-stream-impl` = (project in file("$name;format="no
     libraryDependencies ++= Seq(
       lagomJavadslPersistenceCassandra,
       lagomJavadslKafkaClient,
+      lagomLogback,
       lagomJavadslTestKit
     )
   )
