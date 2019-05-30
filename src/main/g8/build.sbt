@@ -52,7 +52,7 @@ lazy val `$name;format="norm"$-stream-impl` = (project in file("$name;format="no
   )
   .dependsOn(`$name;format="norm"$-stream-api`, `$name;format="norm"$-api`)
 
-val lombok = "org.projectlombok" % "lombok" % "1.16.18"
+val lombok = "org.projectlombok" % "lombok" % "1.18.8"
 
 def common = Seq(
   javacOptions in Compile += "-parameters"
