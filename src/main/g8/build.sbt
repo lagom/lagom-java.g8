@@ -2,7 +2,7 @@ organization in ThisBuild := "$organization$"
 version in ThisBuild := "$version$"
 
 // the Scala version that will be used for cross-compiled libraries
-scalaVersion in ThisBuild := "2.12.8"
+scalaVersion in ThisBuild := "2.13.0"
 
 lazy val `$name;format="norm"$` = (project in file("."))
   .aggregate(`$name;format="norm"$-api`, `$name;format="norm"$-impl`, `$name;format="normalize"$-stream-api`, `$name;format="normalize"$-stream-impl`)
