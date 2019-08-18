@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lightbend.lagom</groupId>
+    <artifactId>maven-archetype-lagom-java</artifactId>
+    <packaging>maven-archetype</packaging>
+    <description>maven-archetype-lagom-java</description>
+    <url>https://www.lagomframework.com/</url>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>3.0.1</version>
+            </extension>
+        </extensions>
+    </build>
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>maven-archetype-lagom-java</name>
+    <organization>
+        <name>com.lightbend.lagom</name>
+        <url>https://www.lagomframework.com/</url>
+    </organization>
+    <scm>
+        <url>https://github.com/lagom/lagom</url>
+        <connection>scm:git:git@github.com:lagom/lagom.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>lagom</id>
+            <name>Lagom Contributors</name>
+            <url>https://github.com/lagom</url>
+        </developer>
+    </developers>
+</project>
