@@ -2,7 +2,7 @@ organization in ThisBuild := "$organization$"
 version in ThisBuild := "$version$"
 
 // the Scala version that will be used for cross-compiled libraries
-scalaVersion in ThisBuild := "2.12.4"
+scalaVersion in ThisBuild := "2.12.9"
 
 lazy val `$name;format="norm"$` = (project in file("."))
   .aggregate(`$name;format="norm"$-api`, `$name;format="norm"$-impl`, `$name;format="normalize"$-stream-api`, `$name;format="normalize"$-stream-impl`)
@@ -52,7 +52,7 @@ lazy val `$name;format="norm"$-stream-impl` = (project in file("$name;format="no
   )
   .dependsOn(`$name;format="norm"$-stream-api`, `$name;format="norm"$-api`)
 
-val lombok = "org.projectlombok" % "lombok" % "1.16.18"
+val lombok = "org.projectlombok" % "lombok" % "1.16.20"
 
 def common = Seq(
   javacOptions in compile += "-parameters"
