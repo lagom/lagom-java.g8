@@ -11,7 +11,7 @@ import com.lightbend.lagom.serialization.Jsonable;
 import lombok.Value;
 
 /**
- * This interface defines all the events that the $name;format="Camel"$Entity supports.
+ * This interface defines all the events that the $name;format="Camel"$Aggregate emits.
  * <p>
  * By convention, the events should be inner classes of the interface, which
  * makes it simple to get a complete picture of what events an entity has.
