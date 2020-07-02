@@ -1,3 +1,4 @@
+
 organization in ThisBuild := "$organization$"
 version in ThisBuild := "$version$"
 
@@ -48,6 +49,18 @@ lazy val `$name;format="norm"$-stream-impl` = (project in file("$name;format="no
       lagomJavadslKafkaClient,
       lagomLogback,
       lagomJavadslTestKit
+    )
+  )
+  .dependsOn(`$name;format="norm"$-stream-api`, `$name;format="norm"$-api`)
+
+lazy val `integration-tests` = (project in file("integration-tests"))
+  .enablePlugins(LagomJava)
+  .settings(common)
+  .settings(
+    libraryDependencies ++= Seq(
+      lagomJavadslApi,
+      lagomJavadslIntegrationClient,
+      lagomLogback
     )
   )
   .dependsOn(`$name;format="norm"$-stream-api`, `$name;format="norm"$-api`)
