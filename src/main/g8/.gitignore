@@ -10,4 +10,5 @@ bin
 .tmpBin
 .factorypath
 .settings
+.idea/*
 logs
